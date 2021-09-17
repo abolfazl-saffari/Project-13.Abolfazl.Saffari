@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container-15 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 100fr / repeat(2, 50fr);
+    grid-template-areas: "login-image login-inputs";
+}
+
+.login-image {
+    grid-area: login-image;
+    background: url("img/Bird.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-inputs {
+    grid-area: login-inputs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15rem;
+    box-sizing: border-box;
+    border: none;
+}
+
+.login-inputs p {
+    margin: 8rem 0;
+    font-size: 4.5vw;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #616161;
+}
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid #616161;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: #616161;
+}
+
+.btn01 {
+    width: 30%;
+    border-radius: 30px;
+    background-color: #616161;
+}
+input{
+    margin-bottom: 2rem;
+}
+
+
+.a-forget {
+    text-align: right;
+    color: #616161;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a.button3 {
+    width: 40%;
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #616161;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button3:hover {
+    background-color: gray;
+}
+
+h6 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+h6:before, h6:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+h6:before {
+    margin-right: 10px
+}
+
+h6:after {
+    margin-left: 10px
+}
+
+.span-class {
+    margin: 6rem 0;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a img {
+    width: 50%;
+}
+
+.footer-02 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-02 a {
+    color: #616161;
+}
+
+.span-under {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    .login-image {
+        display: none;
+    }
+
+    .main-container-15 {
+        grid-template: 100fr / repeat(1, 100fr);
+        grid-template-areas: "login-inputs";
+        padding: 5rem 10rem;
+
+    }
+
+}
+
+@media all and (max-width: 30em) {
+    a.button3 {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
